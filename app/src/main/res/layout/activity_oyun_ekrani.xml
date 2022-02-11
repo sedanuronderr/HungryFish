@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clickk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/deniz"
+    tools:context=".OyunEkrani">
+
+    <ImageView
+        android:id="@+id/karakter"
+        android:layout_width="97dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="224dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fish" />
+
+    <ImageView
+        android:id="@+id/greenball"
+        android:layout_width="72dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="244dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/g" />
+
+    <ImageView
+        android:id="@+id/redball"
+        android:layout_width="75dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="412dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kirmizi" />
+
+    <ImageView
+        android:id="@+id/orangeball"
+        android:layout_width="78dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/orange" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="85dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

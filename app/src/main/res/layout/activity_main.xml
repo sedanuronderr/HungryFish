@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/deniz"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/kirmizi"
+        android:layout_width="63dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="332dp"
+        android:background="#00511818"
+        app:layout_constraintBottom_toTopOf="@+id/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/balik"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.295"
+        app:srcCompat="@drawable/g" />
+
+    <ImageView
+        android:id="@+id/orange"
+        android:layout_width="63dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="116dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toEndOf="@+id/balik2"
+        app:srcCompat="@drawable/orange" />
+
+    <ImageView
+        android:id="@+id/green"
+        android:layout_width="63dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        app:srcCompat="@drawable/kirmizi" />
+
+    <ImageView
+        android:id="@+id/balik2"
+        android:layout_width="160dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fish" />
+
+    <ImageView
+        android:id="@+id/balik1"
+        android:layout_width="160dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="132dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48"
+        app:srcCompat="@drawable/fish" />
+
+    <ImageView
+        android:id="@+id/balik"
+        android:layout_width="160dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="261dp"
+        android:background="#008A2020"
+        app:layout_constraintBottom_toTopOf="@+id/balik2"
+        app:layout_constraintEnd_toStartOf="@+id/kirmizi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/fish" />
+
+    <Button
+        android:id="@+id/oyunabasla"
+        android:layout_width="354dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="20dp"
+        android:background="#37FFFFFF"
+        android:text="OYUNA BAŞLA"
+        android:textSize="34sp"
+        app:cornerRadius="@dimen/cardview_default_radius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/nasilOynanir"
+        android:layout_width="81dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="320dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nasiloynanir" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

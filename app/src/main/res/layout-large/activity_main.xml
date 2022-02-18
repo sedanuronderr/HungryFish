@@ -12,7 +12,7 @@
         android:layout_width="63dp"
         android:layout_height="70dp"
         android:layout_marginTop="96dp"
-        android:layout_marginEnd="88dp"
+        android:layout_marginEnd="128dp"
         android:background="#00511818"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -96,21 +96,23 @@
 
     <ImageView
         android:id="@+id/nasilOynanir"
-        android:layout_width="81dp"
-        android:layout_height="0dp"
+        android:layout_width="73dp"
+        android:layout_height="67dp"
         android:layout_marginStart="35dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="3dp"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintHorizontal_bias="0.908"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/nasiloynanir" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="128dp"
-        android:layout_height="26dp"
-        android:layout_marginBottom="626dp"
+        android:layout_width="129dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="771dp"
         android:text="Nasıl Oynanır"
         android:textAlignment="center"
         android:textColor="@color/black"

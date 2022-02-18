@@ -11,7 +11,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="0dp"
-        android:layout_height="673dp"
+        android:layout_height="1179dp"
         android:background="@drawable/deniz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,40 +20,40 @@
 
         <ImageView
             android:id="@+id/karakter"
-            android:layout_width="97dp"
-            android:layout_height="106dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="224dp"
+            android:layout_width="165dp"
+            android:layout_height="163dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="452dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/fish" />
 
         <ImageView
             android:id="@+id/greenball"
-            android:layout_width="72dp"
-            android:layout_height="66dp"
-            android:layout_marginStart="300dp"
-            android:layout_marginTop="244dp"
+            android:layout_width="81dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="600dp"
+            android:layout_marginTop="504dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/g" />
 
         <ImageView
             android:id="@+id/redball"
-            android:layout_width="75dp"
-            android:layout_height="82dp"
-            android:layout_marginStart="252dp"
-            android:layout_marginTop="412dp"
+            android:layout_width="82dp"
+            android:layout_height="78dp"
+            android:layout_marginStart="572dp"
+            android:layout_marginTop="912dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/kirmizi" />
 
         <ImageView
             android:id="@+id/orangeball"
-            android:layout_width="78dp"
-            android:layout_height="68dp"
-            android:layout_marginStart="224dp"
-            android:layout_marginTop="104dp"
+            android:layout_width="100dp"
+            android:layout_height="81dp"
+            android:layout_marginStart="544dp"
+            android:layout_marginTop="252dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/orange" />
@@ -86,7 +86,7 @@
             android:id="@+id/textView"
             android:layout_width="122dp"
             android:layout_height="58dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="32dp"
             android:layout_weight="1"
             android:gravity="center"
             android:text="0"
@@ -95,7 +95,7 @@
             android:textSize="34sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/imageView4"
-            app:layout_constraintHorizontal_bias="0.669"
+            app:layout_constraintHorizontal_bias="0.568"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

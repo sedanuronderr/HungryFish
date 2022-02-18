@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="171dp"
-        android:layout_height="108dp"
+        android:layout_width="322dp"
+        android:layout_height="197dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -36,15 +36,15 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="351dp"
-        android:layout_height="380dp"
+        android:layout_width="622dp"
+        android:layout_height="794dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="14dp"
         android:layout_marginEnd="8dp"
         android:padding="10dp"
-        android:text="Mavi balığı aşağı ve yukarı hareket ettirerek turuncu ve yeşil balıkları yakalamaya çalışın ve puan kazanın.Eğer kırmızı balığı yakalarsanız 3 candan bir tanesini kayberdersiniz.                            İYİ EĞLENCELER..."
+        android:text="Mavi balığı aşağı ve yukarı hareket ettirerek turuncu ve yeşil balıkları yakalamaya çalışın ve puan kazanın.Eğer kırmızı balığı yakalarsanız 3 candan bir tanesini kayberdersiniz.                                                       İYİ EĞLENCELER..."
         android:textColor="@android:color/white"
-        android:textSize="22sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

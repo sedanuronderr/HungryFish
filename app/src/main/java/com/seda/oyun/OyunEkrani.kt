@@ -8,6 +8,10 @@ import android.os.Looper
 import android.util.Log
 import android.view.MotionEvent
 import android.view.View
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdSize
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.activity_oyun_ekrani.*
 import java.util.*
 import kotlin.concurrent.schedule
@@ -16,6 +20,8 @@ import kotlin.math.floor
 class OyunEkrani : AppCompatActivity() {
     private val timer = Timer()
     private var skor =0
+    var cansayi = 3
+    lateinit var mAdView : AdView
     //pozisyonlar
     private  var anakarakterX = 0.0f
     private  var anakarakterY = 0.0f
@@ -37,14 +43,23 @@ class OyunEkrani : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_oyun_ekrani)
+        MobileAds.initialize(this) {}
+
+
+
+        mAdView = findViewById(R.id.adView)
+        val adRequest = AdRequest.Builder().build()
+        mAdView.loadAd(adRequest)
 
         greenball.x=-800.0f
         greenball.y=-800.0f
 
         redball.x=-1000.0f
         redball.y=-800.0f
-            orangeball.x=-800.0f
+
+        orangeball.x=-800.0f
         orangeball.y=-800.0f
+
         clickk.setOnTouchListener(object: View.OnTouchListener{
             override fun onTouch(v: View?, event: MotionEvent?): Boolean {
                 if(baslangicKontrol){
@@ -111,6 +126,7 @@ class OyunEkrani : AppCompatActivity() {
         }
         karakter.y = anakarakterY
     }
+
     fun cisimleriHareketEttirme(){
         yesiltopX-= ekrangenisligi/49.0f
         kirmiziTopX-= ekrangenisligi/50.0f
@@ -146,14 +162,17 @@ class OyunEkrani : AppCompatActivity() {
         if(0.0f <=kirmiziMekezX && kirmiziMekezX <= anakarakterGenisligi
             && anakarakterY<= kirmiziMerkezY  && kirmiziMerkezY <= anakarakterY+anakarakterYuksekligi
                ){
-            skor+=20
-
+               cansayi-=1
+            can.text = cansayi.toString()
             kirmiziTopX = -10.0f
-            timer.cancel()
-            val intent = Intent(this,SonucEkrani::class.java)
-            intent.putExtra("skor",skor)
-            startActivity(intent)
-            finish()
+
+            if(cansayi == 0) {
+                val intent = Intent(this, SonucEkrani::class.java)
+                intent.putExtra("skor", skor)
+                startActivity(intent)
+                finish()
+                timer.cancel()
+            }
         }
         if(0.0f <=turuncuMekezX && turuncuMekezX <= anakarakterGenisligi
             && anakarakterY<= turuncuMerkezY  && turuncuMerkezY <= anakarakterY+anakarakterYuksekligi
@@ -170,5 +189,7 @@ class OyunEkrani : AppCompatActivity() {
             yesiltopX = -10.0f
         }
         textView.text =skor.toString()
+
+
     }
 }

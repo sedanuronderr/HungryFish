@@ -1,6 +1,7 @@
 package com.seda.oyun
 
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -21,6 +22,7 @@ class OyunEkrani : AppCompatActivity() {
     private val timer = Timer()
     private var skor =0
     var cansayi = 3
+    var mediaPlayer: MediaPlayer? = null
     lateinit var mAdView : AdView
     //pozisyonlar
     private  var anakarakterX = 0.0f
@@ -45,7 +47,9 @@ class OyunEkrani : AppCompatActivity() {
         setContentView(R.layout.activity_oyun_ekrani)
         MobileAds.initialize(this) {}
 
-
+        mediaPlayer = MediaPlayer.create(applicationContext, R.raw.musicc)
+       mediaPlayer?.start()
+       // no need to call prepare(); create() does that for you
 
         mAdView = findViewById(R.id.adView)
         val adRequest = AdRequest.Builder().build()
@@ -171,6 +175,7 @@ class OyunEkrani : AppCompatActivity() {
                 intent.putExtra("skor", skor)
                 startActivity(intent)
                 finish()
+                mediaPlayer?.stop()
                 timer.cancel()
             }
         }

@@ -42,8 +42,8 @@
 
     <ImageView
         android:id="@+id/balik2"
-        android:layout_width="160dp"
-        android:layout_height="157dp"
+        android:layout_width="149dp"
+        android:layout_height="145dp"
         android:layout_marginStart="56dp"
         android:layout_marginBottom="72dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -52,8 +52,8 @@
 
     <ImageView
         android:id="@+id/balik1"
-        android:layout_width="160dp"
-        android:layout_height="157dp"
+        android:layout_width="146dp"
+        android:layout_height="144dp"
         android:layout_marginStart="132dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,7 +63,7 @@
 
     <ImageView
         android:id="@+id/balik"
-        android:layout_width="0dp"
+        android:layout_width="149dp"
         android:layout_height="157dp"
         android:layout_marginStart="66dp"
         android:layout_marginTop="53dp"
@@ -97,22 +97,22 @@
     <ImageView
         android:id="@+id/nasilOynanir"
         android:layout_width="81dp"
-        android:layout_height="0dp"
+        android:layout_height="55dp"
         android:layout_marginStart="35dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintHorizontal_bias="0.682"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/nasiloynanir" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="128dp"
+        android:layout_width="0dp"
         android:layout_height="26dp"
         android:layout_marginBottom="626dp"
         android:text="Nasıl Oynanır"
-        android:textAlignment="center"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

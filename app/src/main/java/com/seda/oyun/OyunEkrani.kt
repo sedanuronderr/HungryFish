@@ -48,6 +48,7 @@ class OyunEkrani : AppCompatActivity() {
         MobileAds.initialize(this) {}
 
         mediaPlayer = MediaPlayer.create(applicationContext, R.raw.musicc)
+        mediaPlayer?.isLooping =true
        mediaPlayer?.start()
        // no need to call prepare(); create() does that for you
 
@@ -178,6 +179,7 @@ class OyunEkrani : AppCompatActivity() {
                 mediaPlayer?.stop()
                 timer.cancel()
             }
+
         }
         if(0.0f <=turuncuMekezX && turuncuMekezX <= anakarakterGenisligi
             && anakarakterY<= turuncuMerkezY  && turuncuMerkezY <= anakarakterY+anakarakterYuksekligi

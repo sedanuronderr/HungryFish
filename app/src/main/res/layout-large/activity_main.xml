@@ -11,10 +11,10 @@
         android:id="@+id/green"
         android:layout_width="63dp"
         android:layout_height="70dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="128dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="100dp"
         android:background="#00511818"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/balik"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/g" />
 
@@ -22,10 +22,11 @@
         android:id="@+id/orange"
         android:layout_width="63dp"
         android:layout_height="70dp"
+        android:layout_marginStart="39dp"
         android:layout_marginBottom="116dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintHorizontal_bias="0.234"
         app:layout_constraintStart_toEndOf="@+id/balik2"
         app:srcCompat="@drawable/orange" />
 
@@ -33,9 +34,11 @@
         android:id="@+id/kirmizi"
         android:layout_width="63dp"
         android:layout_height="70dp"
+        android:layout_marginStart="44dp"
         android:layout_marginEnd="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/balik1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499"
         app:srcCompat="@drawable/kirmizi" />
@@ -63,8 +66,8 @@
 
     <ImageView
         android:id="@+id/balik"
-        android:layout_width="0dp"
-        android:layout_height="157dp"
+        android:layout_width="159dp"
+        android:layout_height="152dp"
         android:layout_marginStart="66dp"
         android:layout_marginTop="53dp"
         android:layout_marginEnd="70dp"
@@ -110,15 +113,12 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="129dp"
-        android:layout_height="31dp"
-        android:layout_marginBottom="771dp"
+        android:layout_width="141dp"
+        android:layout_height="23dp"
         android:text="Nasıl Oynanır"
         android:textAlignment="center"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/balik"
         app:layout_constraintTop_toBottomOf="@+id/nasilOynanir" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

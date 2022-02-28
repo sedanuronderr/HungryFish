@@ -102,21 +102,22 @@
         android:layout_marginTop="5dp"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.682"
+        app:layout_constraintHorizontal_bias="0.877"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/nasiloynanir" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="0dp"
-        android:layout_height="26dp"
-        android:layout_marginBottom="626dp"
+        android:layout_width="144dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
         android:text="Nasıl Oynanır"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/balik"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nasilOynanir" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

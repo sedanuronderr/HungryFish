@@ -11,10 +11,12 @@
         android:id="@+id/green"
         android:layout_width="63dp"
         android:layout_height="70dp"
+        android:layout_marginStart="37dp"
         android:layout_marginTop="96dp"
         android:layout_marginEnd="88dp"
         android:background="#00511818"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/balik"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/g" />
 
@@ -22,10 +24,10 @@
         android:id="@+id/orange"
         android:layout_width="63dp"
         android:layout_height="70dp"
-        android:layout_marginBottom="116dp"
+        android:layout_marginBottom="112dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintHorizontal_bias="0.284"
         app:layout_constraintStart_toEndOf="@+id/balik2"
         app:srcCompat="@drawable/orange" />
 
@@ -36,25 +38,27 @@
         android:layout_marginEnd="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toEndOf="@+id/balik1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499"
         app:srcCompat="@drawable/kirmizi" />
 
     <ImageView
         android:id="@+id/balik2"
-        android:layout_width="160dp"
-        android:layout_height="157dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="72dp"
+        android:layout_width="151dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/fish" />
 
     <ImageView
         android:id="@+id/balik1"
-        android:layout_width="160dp"
-        android:layout_height="157dp"
-        android:layout_marginStart="132dp"
+        android:layout_width="149dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="112dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -63,8 +67,8 @@
 
     <ImageView
         android:id="@+id/balik"
-        android:layout_width="149dp"
-        android:layout_height="157dp"
+        android:layout_width="141dp"
+        android:layout_height="142dp"
         android:layout_marginStart="66dp"
         android:layout_marginTop="53dp"
         android:layout_marginEnd="70dp"
@@ -96,27 +100,23 @@
 
     <ImageView
         android:id="@+id/nasilOynanir"
-        android:layout_width="81dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="35dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        android:layout_width="65dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.942"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/nasiloynanir" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="0dp"
-        android:layout_height="26dp"
-        android:layout_marginBottom="626dp"
+        android:layout_width="131dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="1dp"
         android:text="Nasıl Oynanır"
         android:textAlignment="center"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/balik"
         app:layout_constraintTop_toBottomOf="@+id/nasilOynanir" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

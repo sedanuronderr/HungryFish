@@ -1,4 +1,4 @@
-# Projede Object Animator ve SharedPrefences kullanılmıştır.
+# Object Animator ve SharedPrefences Jetpack libraries were used in the project.
 <table>
 <tr>
   <td>
